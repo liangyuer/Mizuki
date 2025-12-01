@@ -63,7 +63,26 @@ export const timelineData: TimelineItem[] = [
 		color: "#1e56b7ff",
 		featured: true,
 	},
-	
+	{
+		id: "cet-4",
+		title: "考取CET-4",
+		description:
+			"争取一次拿下四级，加油喵",
+		type: "education",
+		startDate: "2025-09-01",
+		endDate:"2025-12-13",
+		location: "威海",
+		organization: "山东大学",
+		skills: [],
+		achievements: [
+			"",
+			"",
+			"",
+		],
+		icon: "material-symbols:school",
+		color: "#f01452ff",
+		featured: true,
+	},
 ];
 
 // Get timeline statistics
