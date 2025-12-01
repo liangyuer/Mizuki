@@ -294,6 +294,11 @@ export const navBarConfig: NavBarConfig = {
 					url: "/about/",
 					icon: "material-symbols:person",
 				},
+				{
+					name: "Friends",
+					url: "/friends/",
+					icon: "material-symbols:group",
+				},
 			],
 		},
 		{
