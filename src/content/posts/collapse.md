@@ -1,12 +1,13 @@
 ---
 title: 利用collapse launcher让星穹铁道开启120帧
 published: 2025-08-01
-description: ''
-image: 'https://photo.0721255.xyz/file/1754035126492_图片.png'
-tags: [星穹铁道]
-category: '软件分享'
-draft: false 
-lang: ''
+description: ""
+image: https://photo.0721255.xyz/file/1754035126492_图片.png
+tags:
+  - 星穹铁道
+category: 软件分享
+draft: false
+lang: ""
 ---
 
 # 前言：什么是collapse  launcher
