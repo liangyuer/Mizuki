@@ -2,7 +2,7 @@
 title: 对2025年看过的动漫与电影的点评
 published: 2025-12-07
 description: 对一些电影与动漫的点评
-image: src/content/assets/images/EpBDDW_NhhTJGqiJb8xrniQhGjI.cnt.jpg
+image: ../assets/images/EpBDDW_NhhTJGqiJb8xrniQhGjI.cnt.jpg
 tags:
   - 日常
   - 动漫
