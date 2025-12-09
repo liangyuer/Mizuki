@@ -9,7 +9,7 @@ tags:
 category: 知识点
 draft: false
 lang: ""
-encrypted: "true"
+encrypted: true
 password: 我是初音未来
 ---
 # 计算思维基本知识点

@@ -9,7 +9,7 @@ tags:
 category: 知识点
 draft: false
 lang: ""
-encrypted: "true"
+encrypted: true
 password: 我是初音未来
 ---
 # 微观经济学期末核心考点总结（全面复习版）
