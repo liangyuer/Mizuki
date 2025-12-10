@@ -10,7 +10,7 @@ category: 知识点
 draft: false
 lang: ""
 encrypted: true
-password: 我是初音未来
+password: chuyinweilai
 ---
 # 微观经济学期末核心考点总结（全面复习版）
 
@@ -28,7 +28,7 @@ password: 我是初音未来
 | **利润最大化**  | $MR = MC$                                                               | **万能公式**，所有市场结构通用        |
 | **停止营业点**  | $P = AVC_{min}$                                                         | 低于此点关门                   |
 | **完全竞争长期** | $P = MR = SMC = LMC = LAC = SAC$                                        | 利润为0，效率最高                |
-
+![](../assets/images/weiguan.png)
 ## 第一章：导论 & 基本假设
 
 ### 1. 核心概念
