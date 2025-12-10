@@ -185,11 +185,12 @@
   },
   "active": "31ab50984c4e532a",
   "lastOpenFiles": [
-    "src/content/assets/images/weiguan.png",
     "src/content/posts/jisuansiwei.md",
     "src/content/posts/weiguan.md",
-    "src/content/assets/images/s4392773.jpg",
+    "src/content/posts/yinxin.md",
+    "src/content/assets/images/weiguan.png",
     "src/content/assets/images/9deba57667e5406297aea52f31f4ea41.png",
+    "src/content/assets/images/s4392773.jpg",
     "src/content/assets/images/licensed-image.jpg",
     "src/content/posts/byz.md",
     "src/content/posts/2025comment.md",
@@ -211,7 +212,6 @@
     "src/content/posts/pcl.md",
     "src/content/posts/assets/images/2025-07-29-20-23-21-image.png",
     "src/content/spec/新建 文本文档.txt",
-    "src/content/posts/tzs.md",
-    "src/content/posts/yinxin.md"
+    "src/content/posts/tzs.md"
   ]
 }

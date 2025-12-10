@@ -2,7 +2,7 @@
 title: 微观经济学知识点总结
 published: 2025-12-09
 description: 微观经济学知识点，从老师的ppt提取精华
-image: ../assets/images/s4392773.jpg
+image: ../assets/images/weiguan.png
 tags:
   - 知识总结
   - 微观经济学
