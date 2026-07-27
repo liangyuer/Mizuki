@@ -101,7 +101,7 @@ export const timelineData: TimelineItem[] = [
 		id: "xuechuangbei-2026",
 		title: "学创杯综合模拟山东省二等奖",
 		description:
-			"参加"学创杯"全国大学生创业综合模拟大赛，获得山东省二等奖",
+			`参加"学创杯"全国大学生创业综合模拟大赛，获得山东省二等奖`,
 		type: "achievement",
 		startDate: "2026-05-01",
 		location: "山东",
