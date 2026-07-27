@@ -5,18 +5,18 @@
  */
 
 /* 关键：页面加载时立即应用正确的移动端样式 */
-@media (max-width: 768px) {
+@media (width < 768px) {
   /* 强制在初始化前隐藏内容，避免闪烁 */
   #post-list-container:not(.js-initialized) {
     opacity: 0;
     transition: opacity 0.1s ease-in-out;
   }
-  
+
   /* JavaScript初始化完成后显示内容 */
   #post-list-container.js-initialized {
     opacity: 1;
   }
-  
+
   /* 确保移动端使用紧凑的列表布局 */
   #post-list-container {
     display: flex !important;
@@ -27,7 +27,7 @@
     background: transparent !important;
     min-height: auto !important;
   }
-  
+
   /* 覆盖所有可能的网格模式 */
   #post-list-container.grid-mode {
     display: flex !important;
@@ -36,25 +36,25 @@
     grid-template-columns: none !important;
     grid-auto-rows: auto !important;
   }
-  
+
   /* 优化文章卡片间距 */
   #post-list-container .post-card-item {
     margin-bottom: 0 !important;
     margin-top: 0 !important;
     padding: 0.75rem 1rem !important;
   }
-  
+
   /* 优化卡片边框和圆角 */
   #post-list-container .card-base {
     margin-bottom: 0 !important;
     border-radius: var(--radius-large) !important;
   }
-  
+
   /* 移除不必要的分隔线 */
   #post-list-container > div.border-t-\[1px\] {
     display: none !important;
   }
-  
+
   /* 增加文章列表容器的底部间距，与分页按钮保持适当距离 */
   #post-list-container {
     margin-bottom: 2rem !important; /* 增加到2rem，约32px */
@@ -62,12 +62,11 @@
 }
 
 /* 桌面端保持原有样式 */
-@media (min-width: 769px) {
+@media (width >= 768px) {
   #post-list-container {
     transition: all 0.3s ease-in-out;
   }
 }
-
 
 /* 全局规则：确保所有 wallpaper-transparent 模式下的卡片都透明 */
 body.wallpaper-transparent .card-base,
@@ -100,7 +99,7 @@ body.wallpaper-transparent .card-base .card-base,
 }
 
 /* 移动端（<768px）强制透明 */
-@media (max-width: 768px) {
+@media (width < 768px) {
   body.wallpaper-transparent .card-base,
   body.wallpaper-transparent #post-list-container .card-base {
     background: var(--card-bg-transparent) !important;
@@ -110,8 +109,8 @@ body.wallpaper-transparent .card-base .card-base,
   }
 }
 
-/* 中等屏幕（769px-1280px）强制透明 - 重点修复区域 */
-@media (min-width: 769px) and (max-width: 1280px) {
+/* 中等屏幕（768px-1280px）强制透明 - 重点修复区域 */
+@media (768px <= width < 1280px) {
   body.wallpaper-transparent .card-base,
   body.wallpaper-transparent #post-list-container .card-base,
   body.wallpaper-transparent .post-card-item .card-base {
@@ -120,7 +119,7 @@ body.wallpaper-transparent .card-base .card-base,
     backdrop-filter: blur(8px) !important;
     -webkit-backdrop-filter: blur(8px) !important;
   }
-  
+
   :root.dark body.wallpaper-transparent .card-base,
   :root.dark body.wallpaper-transparent #post-list-container .card-base,
   :root.dark body.wallpaper-transparent .post-card-item .card-base {
@@ -132,7 +131,7 @@ body.wallpaper-transparent .card-base .card-base,
 }
 
 /* 大屏幕（>1280px）强制透明 */
-@media (min-width: 1281px) {
+@media (width >= 1280px) {
   body.wallpaper-transparent .card-base,
   body.wallpaper-transparent #post-list-container .card-base,
   body.wallpaper-transparent .post-card-item .card-base {
@@ -141,7 +140,7 @@ body.wallpaper-transparent .card-base .card-base,
     backdrop-filter: blur(8px) !important;
     -webkit-backdrop-filter: blur(8px) !important;
   }
-  
+
   :root.dark body.wallpaper-transparent .card-base,
   :root.dark body.wallpaper-transparent #post-list-container .card-base,
   :root.dark body.wallpaper-transparent .post-card-item .card-base {
@@ -162,7 +161,7 @@ body.wallpaper-transparent #post-list-container {
 }
 
 /* 移动端文章列表容器透明 */
-@media (max-width: 768px) {
+@media (width < 768px) {
   body.wallpaper-transparent #post-list-container {
     background: transparent !important;
     background-color: transparent !important;
