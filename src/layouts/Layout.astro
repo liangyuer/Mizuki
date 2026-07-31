@@ -144,6 +144,16 @@ const bannerOffset =
 >
 	<head>
 		<meta charset="UTF-8" />
+		<!--
+			层顺序守卫：锁定 Tailwind v4 的 @layer 顺序（properties < theme < base < components < utilities）。
+			Swup 切换页面时会替换 <head> 中的样式标签，若层顺序被打乱（base 跑到 utilities 之后），
+			preflight 重置规则 *{margin:0} 会压过 .mx-auto/.px-* 等工具类，导致布局错位。
+			此样式必须始终位于 <head> 最前；GridScripts 会在每次 swup 页面切换后重新把它插到首位。
+		-->
+		<style
+			is:inline
+			data-layer-order-guard
+		>@layer properties, theme, base, components, utilities;</style>
 		<Font cssVariable="--font-body" preload />
 		<Font cssVariable="--font-cjk" />
 		<Font cssVariable="--font-jetbrains-mono" />

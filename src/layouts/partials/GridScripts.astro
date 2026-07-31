@@ -478,6 +478,24 @@ const {
 		applyWallpaperMode();
 	});
 
+	// 层顺序守卫：Swup 切换页面时会替换 <head> 中的样式标签，导致 Tailwind v4 的
+	// @layer 顺序被打乱（base 被排到 utilities 之后），preflight 重置规则会压过
+	// 工具类（margin/padding 归零，布局错位）。这里在每次切换后把层排序声明重新插到
+	// <head> 最前，强制恢复正确的层顺序。
+	function ensureLayerOrderGuard() {
+		let guard = document.querySelector("style[data-layer-order-guard]");
+		if (!guard) {
+			guard = document.createElement("style");
+			guard.setAttribute("data-layer-order-guard", "");
+			guard.textContent =
+				"@layer properties, theme, base, components, utilities;";
+		}
+		if (document.head.firstChild !== guard) {
+			document.head.insertBefore(guard, document.head.firstChild);
+		}
+	}
+	document.addEventListener("swup:page:view", ensureLayerOrderGuard);
+
 	// 在页面完全加载后，再次确认布局模式是否正确
 	if (document.readyState === "loading") {
 		document.addEventListener("DOMContentLoaded", function () {
