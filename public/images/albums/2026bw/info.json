@@ -1,0 +1,10 @@
+{
+	"title": "2026bw之旅",
+	"description": "2026 BW 之旅的照片留念",
+	"date": "2026-07-14",
+	"tags": ["BW2026"],
+	"layout": "masonry",
+	"columns": 3,
+	"password": "114514",
+	"passwordHint": "六位数字密码"
+}
